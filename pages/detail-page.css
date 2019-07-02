@@ -1,0 +1,29 @@
+div.comment{
+    text-align: center;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+    margin: 1rem auto;
+    max-width: 50%;
+    min-width: 15rem;
+    padding: 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 2rem 0;
+    width: 100%;
+    background: #FFBA00;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+}
+
+.button{
+    font-family: 'Inconsolata',fantasy;
+    padding: 5px;
+    margin: 2rem auto;
+    border: 2px solid #CCC;
+    background-color: bisque;
+    border-radius: 2px;
+    max-width: 30%;
+}
