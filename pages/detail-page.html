@@ -6,32 +6,36 @@
     <meta http-equiv="X-UA-Compatible">
     <title>detail page</title>
     <link rel="stylesheet" type="text/css" media="screen" href="./detail-page.css"/>
-    <script src="./myfunction.js"></script>
+    <script src="detail-page.js"></script>
 </head>
 <body>
-        <h1>Shawn 's mobile museum app</h1>
     <main>
-        <h2>Monalisa pixel art, unknow, 2019</h2>
-        <section>
-                <a href="./pages/detail-page.html"><img class="artObject" src="https://www.quercettistore.com/sites/default/files/styles/product_image_basic/public/products/0801_high_0.jpg?itok=JxQcsg5p"></a>
-        </section>
-        <h2>comments</h2>
-        <section id="comments">
+            <section id="content"><p>Shawn's Mobile Museum App</p><h1>Een vrolijke vioolspeler, Gerard van Honthorst, 1623</h1><img src="https://lh3.googleusercontent.com/V3sjNgCA_Jssjm0sTKaPZeOwCv_vAPpjllrAF-yAB8UkqIlc6UX_jxJmxH_axVHTHxlK1E7Slecg8K5bIvSbDlw0zg=s0"></section>
             
-        </section>
- 
-        <div class = "comment">
-            <p>
-                <label for="name_txt">name:</label>
-                <input id="name_txt" type="text"/>
-            </p>
-            <p>
-                <label for="comment_txt">comment:</label>
-                <input id="comment_txt" type="text"/>
-            </p>
-        </div>
-        <div class="button">
-            <button onclick="submit()">post comment</button>
-        </div>
+        <section id='comments'>
+            <h2>Comments</h2>
+                
+            <section class='comment'>
+                    <h3>Arien said:</h3>
+                    <p>"This is definitely one of my favorites!"</p>
+            </section>
+        </section>    
+            <form onsubmit="submitComment(); return false">
+                <div class="formSection">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="formSection">
+                    <label for="msg">Message:</label>
+                    <textarea id="msg"></textarea>
+                </div>
+                <div class="button">
+                    <button type="default">Post your comment</button>
+                </div>
+            </form>
+    </main>
+        <footer>
+            <p>@Codaisseur</p>
+        </footer>
 </body>
 </html>
