@@ -329,8 +329,11 @@ function loadArt(){
     const hl = './pages/detail-page.html'
     for(var i=0;i<paintings.length;i++)
     {
+        if(paintings[i].webImage.width>500 && 
+            paintings[i].principalOrFirstMaker!="Honthorst"&&
+            paintings[i].longTitle.includes('19'))
         //gather data
-        const title= paintings[i].title
+        {const title= paintings[i].title
         const link= paintings[i].webImage.url
         const image = document.createElement('img')
         const a = document.createElement('a')
@@ -341,7 +344,7 @@ function loadArt(){
         a.href = hl;
         //show elements
         document.getElementById('gallery').appendChild(a)
-        a.appendChild(image);
+        a.appendChild(image);}
     }
     //document.getElementById('gallary').appendChild(painting);
 }
