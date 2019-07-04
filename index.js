@@ -324,11 +324,24 @@ const data = {
     ]
   }
 
-// function loadArt(){
-//     var painting = data.artObjects;
-//     painting.forEach(Element) => {
-//         <a href="./pages/detail-page.html">
-//   <img alt=Element. class="artObject" src= Element.links.web/>
-// </a>
-//     });
-// }
+function loadArt(){
+    const paintings = data.artObjects
+    const hl = './pages/detail-page.html'
+    for(var i=0;i<paintings.length;i++)
+    {
+        //gather data
+        const title= paintings[i].title
+        const link= paintings[i].webImage.url
+        const image = document.createElement('img')
+        const a = document.createElement('a')
+        //amend elements
+        
+        image.src = link;
+        image.alt = title;
+        a.href = hl;
+        //show elements
+        document.getElementById('gallery').appendChild(a)
+        a.appendChild(image);
+    }
+    //document.getElementById('gallary').appendChild(painting);
+}
